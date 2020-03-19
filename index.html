@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <link href="style_Sheet.css" rel="stylesheet">
   <script src="Buildings_Objext.js"></script>
   <script src="district_Functions.js"></script>
   <script src="city_Functions.js"></script>
@@ -13,12 +14,22 @@
   <script src="npc_Objects.js"></script>
   <script src="hex_Objects.js"></script>
   <script src="kingdom_Stat_Functions.js"></script>
+  <script src="azenthyr_Level_One_West.js"></script>
+  <script src="hex_Experiment.js"></script>
+  
+ 
 </head>
+
+<canvas id="canvas" width="1100" height="1100"></canvas>
+
+
 
 <body>
 </body>
-<script>
+<script src="hex_Map_Drawing.js"></script>
+<script src="cursor_Position_Function.js"></script>
 
+<script>
 const kingdom_1 = {
     name:"Thorn Kingdom",
     hexs:[],
@@ -95,6 +106,6 @@ kingdom_1.hexs.push(hex.a4);
 calculate_Npc_Stat_Mods();
 calculate_Kingdoms_Stats(kingdom_1);
 
-
+create_Map(azenthyr_Level_One_West_Array);
 </script>
 </html>

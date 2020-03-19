@@ -6,16 +6,7 @@ const hex = {
     explored:false,
     map:"greenbelt",
     coordinates:[1,1],
-    special_Resource:{
-        name:'none',
-        economy:0,
-        loyalty:0,
-        stability:0,
-        defense:0,
-        consumption:0,
-        BP_Per_Turn:0,
-    }
-    },
+    special_Resource:{name:'none',economy:0,loyalty:0,stability:0,defense:0, consumption:0,BP_Per_Turn:0,}},
     a2:{
         name:"",
         terrain :hex_Type.plains,
