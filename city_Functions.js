@@ -62,3 +62,7 @@ function calculate_City_Stats(city){
 
     //console.log(city);
 }
+
+function add_District(city,district){
+    city.districts.push(district)
+}

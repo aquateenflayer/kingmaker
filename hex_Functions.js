@@ -111,4 +111,10 @@ function calculate_Hex_Stats(hex){
 }
 
 
-  
+  function add_City(hex,city){
+    hex.cities.push(city);
+  }
+
+  function add_Improvement(hex,name,improvement){
+      hex.improvements.push([name,improvement])
+  }

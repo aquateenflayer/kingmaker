@@ -235,3 +235,7 @@ function calculate_Kingdoms_Stats(kingdom){
     kingdom.unrest =  calculate_Kingdom_Unrest(kingdom);
     kingdom.BP_Per_Turn = calculate_Kingdom_Build_Points_Per_Turn(kingdom);
 }
+
+function add_Hex(kingdom,hex){
+    kingdom.hexs.push(hex);
+}

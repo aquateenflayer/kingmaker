@@ -54,7 +54,7 @@ const improvement ={
         cost:6,
 
     },
-    Quarry:{
+    quarry:{
         name:"quarry",
         economy:1,
         loyalty:0,

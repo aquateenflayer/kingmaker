@@ -51,3 +51,7 @@ function calculate_District_Stats(district){
     district.defense = calculate_District_Defense(district);
    // console.log(district)
 }
+
+function add_Building(district,name,building,x,y){
+    district.buildings.push([name,building,[x,y]]);
+}

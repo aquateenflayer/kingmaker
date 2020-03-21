@@ -1,6 +1,6 @@
 const taxation_Array = [
     {
-        name:"none",
+        name:"no taxes",
         economy:0,
         loyalty:1
     },
@@ -57,7 +57,7 @@ const holiday_Array = [
 
 const promotion_Array = [
     {
-        name:'none',
+        name:'no effort',
         stability:-1,
         consumption:0
     },
@@ -82,3 +82,10 @@ const promotion_Array = [
         consumption:8
     },
 ]
+
+
+/*
+function adjust_Edict(kingdom,edict,level){
+    kingdom.edict = level
+}
+*/

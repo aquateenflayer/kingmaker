@@ -1,5 +1,5 @@
 building = {
-
+    Armory:{name:"Armory",cost:8,lots:1,economy:0,loyalty:0,stability:0,discount:false,magic_Items:false,upgrades_To:false,defense:2,base_Value:0,unrest:-2,},
     Academy:{name:"Academy",cost:52,lots:2,economy:2,loyalty:2,stability:0,discount:["Casters_Tower","Library","Magic_Shop"],magic_Items:[[3,'minor'],[2,'medium']],upgrades_To:"Unversity",defense:0,base_Value:0,unrest:0,},
     Alchemist:{name:"Alchemist",cost:18,lots:1,economy:1,loyalty:0,stability:0,discount:false,magic_Items:[[1,'minor']],upgrades_To:false,defense:0,base_Value:1000,unrest:0,},
     Arena:{name:"Arena",cost:40,lots:4,economy:0,loyalty:0,stability:4,discount:["Brothel","Garrison","Inn","Stable","Theater"],magic_Items:false,upgrades_To:false,defense:0,base_Value:0,unrest:0,},
