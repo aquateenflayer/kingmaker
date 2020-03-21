@@ -16,10 +16,18 @@
   <script src="kingdom_Stat_Functions.js"></script>
   <script src="azenthyr_Level_One_West.js"></script>
   <script src="hex_Experiment.js"></script>
-  
+  <script src="kingdom_Objects.js"></script>
+  <script src="city_Objects.js"></script>
+  <script src="district_Objects.js"></script>
+  <script src="post_Kingdom_Data_Function.js"></script>
+  <script src="special_Condition_Objects.js"></script>
  
 </head>
-
+<h1 id = "kingdom_Name"></h1>
+<p id = "stats"></p>
+<p id = "edicts"></p>
+<p id = "treasury"></p>
+<p id = "leadership"></p>
 <canvas id="canvas" width="1100" height="1100"></canvas>
 
 
@@ -30,82 +38,50 @@
 <script src="cursor_Position_Function.js"></script>
 
 <script>
-const kingdom_1 = {
-    name:"Thorn Kingdom",
-    hexs:[],
-    special_Conditions:[],
-    leadership : {
-        ruler:npc.Dalia,
-        councilor:npc.Dalia,
-        general:npc.Dalia,
-        grand_Diplomat:npc.Dalia,
-        high_Priest:npc.Dalia,
-        magister:npc.Dalia,
-        marshal:npc.Dalia,
-        royal_Enforcer:npc.Dalia,
-        spymaster:npc.Dalia,
-        treasurer:npc.Dalia,
-        warden:npc.Dalia
-
-
-    },
-    taxation_Edict : 0,
-    holiday_Edict :4,
-    promotion_Edict : 0,
-    unrest : 3,
-    build_Points:10,
-}
-
-special_Condition_Testing_Condition = {
-    name:"Test special condition",
-    economy:5,
-    loyalty:0,
-    stability:0,
-    consumption:0,
-    BP_Per_Turn:0,
-    unrest:1,
-    duration: false,
-
-};
-kingdom_1.special_Conditions.push(special_Condition_Testing_Condition)
 
 
 
 
 
-const Thronwood_City = {
-    name:"Thornwood City",
-    hex: "Hex coordents",
-    districts:[],
-  };
 
- 
 
-Thronwood_City.districts.push( {name:"Tavern District",
-    buildings:[['Gary\'s Inn',building.Inn,'coordinates of building in the city'],['Smith of Doug',building.Smithy],["Great Street",building.Paved_Streets],["Night Markets",building.Black_Market],['city Wall',building.City_Wall]]},
-                                );
-
-Thronwood_City.districts.push( {name:"Tannery District",
-    buildings:[['Redwing Tanners',building.Tannery,'coordinates of building in the city'],['We hate doug smithy',building.Smithy],['city Wall',building.City_Wall]]}
-                                );
 
 
 
 
-    //calculate_District_Stats(Thronwood_City.districts[0])
-    //calculate_District_Stats(Thronwood_City.districts[1])
-    hex.a2.improvements.push(['greeble farms',improvement.farm]);
-    hex.a2.improvements.push(['blackrock mines',improvement.mine]);
-    hex.a2.cities.push(Thronwood_City);
+ 
 
 
-kingdom_1.hexs.push(hex.a2);
-kingdom_1.hexs.push(hex.a3);
-kingdom_1.hexs.push(hex.a4);
-//kingdom_1.hexs.push(hex.a5);
+        
+    add_District(vothys,castle_District);
+
+
+player_Kingdom.hexs.push(azenthyr_Level_One_West.a2);
+
+//azenthyr_Level_One_West.a2.cities.push(vothys);
+add_City(azenthyr_Level_One_West.a2,vothys);
+//add_Improvement(azenthyr_Level_One_West.a2,"Frank's Farm",improvement.farm);
+add_Building(castle_District,"Castle Vothys",building.Castle,1,1);
+   // hex.a2.improvements.push(['greeble farms',improvement.farm]);
+    //hex.a2.improvements.push(['blackrock mines',improvement.mine]);
+    //hex.a2.cities.push(Thronwood_City);
+fasturvault_City_State.hexs.push(azenthyr_Level_One_West.j1);
+add_City(azenthyr_Level_One_West.j1,fasturvalt);
+add_District(fasturvalt,fasturvalt_Center);
+//add_Building(fasturvalt_Center.buildings,"",building.Castle,1,1);
+add_Building(fasturvalt_Center,"Hall of Lords",building.Garrison,1,1);
+add_Building(fasturvalt_Center,"Hall of Lords",building.House,1,1);
+add_Building(fasturvalt_Center,"Hall of Lords",building.Armory,1,1);
+add_Improvement(azenthyr_Level_One_West.j1,"",improvement.quarry);
+add_Improvement(azenthyr_Level_One_West.j1,"",improvement.farm);
+add_Improvement(azenthyr_Level_One_West.j1,"",improvement.fishery);
+add_Special_Condition(player_Kingdom,gnome_Fealty);
+
 calculate_Npc_Stat_Mods();
-calculate_Kingdoms_Stats(kingdom_1);
+calculate_Kingdoms_Stats(player_Kingdom);
 
-create_Map(azenthyr_Level_One_West_Array);
+//create_Map(azenthyr_Level_One_West_Array);
+
+
 </script>
 </html>

@@ -2,12 +2,120 @@ const npc = {
 
     Dalia:{
         name:"Dalia",
-        strength:15,
+        strength:22,
+        dexterity:12,
+        constitution:16,
+        intelligence:8,
+        wisdom:12,
+        charisma:18,
+    },
+    Bartholomew_2:{
+        name:"Bartholomew 2",
+        strength:7,
         dexterity:14,
+        constitution:13,
+        intelligence:16,
+        wisdom:9,
+        charisma:17,
+    },
+    Varys:{
+        name:"Varys Meliryn",
+        strength:10,
+        dexterity:10,
+        constitution:12,
+        intelligence:14,
+        wisdom:8,
+        charisma:18,
+    },
+    Survives_By_Luck:{
+        name:"Survives By Luck",
+        strength:10,
+        dexterity:10,
         constitution:12,
         intelligence:12,
+        wisdom:12,
+        charisma:12,
+    },
+    Danny:{
+        name:"Danny Whistler",
+        strength:8,
+        dexterity:14,
+        constitution:10,
+        intelligence:10,
         wisdom:8,
-        charisma:11,
+        charisma:14,
+    },
+    Jarl:{
+        name:"Jarl Mountaincleaver",
+        strength:14,
+        dexterity:9,
+        constitution:17,
+        intelligence:10,
+        wisdom:21,
+        charisma:6,
+    },
+    Chasm:{
+        name:"Old Dwarf Chasm",
+        strength:8,
+        dexterity:14,
+        constitution:8,
+        intelligence:20,
+        wisdom:13,
+        charisma:18,
+    },
+    Dorin:{
+        name:"Dorin Shattersmith",
+        strength:20,
+        dexterity:10,
+        constitution:17,
+        intelligence:8,
+        wisdom:13,
+        charisma:9,
+    },
+    Brutus:{
+        name:"Brutus Staktare",
+        strength:17,
+        dexterity:13,
+        constitution:12,
+        intelligence:22,
+        wisdom:13,
+        charisma:6,
+    },
+    Bartholomew:{
+        name:"Bartholomew",
+        strength:13,
+        dexterity:15,
+        constitution:12,
+        intelligence:2,
+        wisdom:14,
+        charisma:7,
+    },
+    Generic:{
+        name:"Generic Placeholder",
+        strength:12,
+        dexterity:12,
+        constitution:12,
+        intelligence:12,
+        wisdom:12,
+        charisma:12,
+    },
+    Angbhast:{
+        name:"Angbhast",
+        strength:7,
+        dexterity:18,
+        constitution:11,
+        intelligence:20,
+        wisdom:12,
+        charisma:9,
+    },
+    Turbin:{
+        name:"Turbin The Mad",
+        strength:15,
+        dexterity:9,
+        constitution:14,
+        intelligence:9,
+        wisdom:8,
+        charisma:9,
     },
 }
 
@@ -16,7 +124,7 @@ const npc = {
 
 
 
-const npc_Array = [npc.Dalia]
+const npc_Array = [npc.Dalia,npc.Bartholomew_2,npc.Varys,npc.Survives_By_Luck,npc.Danny,npc.Jarl,npc.Chasm,npc.Dorin,npc.Brutus,npc.Bartholomew,npc.Generic,npc.Angbhast,npc.Turbin];
 
 function calculate_Npc_Stat_Mods(){
 

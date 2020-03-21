@@ -2,7 +2,7 @@
 const azenthyr_Level_One_West = {
 
     a1:{name:"",terrain:hex_Type.rock,cities:[],improvements:[],explored:false, map:"azenthyr_Level_One_West",coordinates:[1,1],special_Resource:{name:'none',economy:0,loyalty:0,stability:0,defense:0, consumption:0,BP_Per_Turn:0,}},
-    a2:{name:"Vothys",terrain:hex_Type.cavern,cities:[],improvements:[],explored:false, map:"azenthyr_Level_One_West",coordinates:[1,2],special_Resource:{name:'none',economy:0,loyalty:0,stability:0,defense:0, consumption:0,BP_Per_Turn:0,}},
+    a2:{name:"Vothys",terrain:hex_Type.cavern,cities:[],improvements:[],explored:true, map:"azenthyr_Level_One_West",coordinates:[1,2],special_Resource:{name:'none',economy:0,loyalty:0,stability:0,defense:0, consumption:0,BP_Per_Turn:0,}},
     a3:{name:"",terrain:hex_Type.rock,cities:[],improvements:[],explored:false, map:"azenthyr_Level_One_West",coordinates:[1,3],special_Resource:{name:'none',economy:0,loyalty:0,stability:0,defense:0, consumption:0,BP_Per_Turn:0,}},
     a4:{name:"",terrain:hex_Type.rock,cities:[],improvements:[],explored:false, map:"azenthyr_Level_One_West",coordinates:[1,4],special_Resource:{name:'none',economy:0,loyalty:0,stability:0,defense:0, consumption:0,BP_Per_Turn:0,}},
     a5:{name:"",terrain:hex_Type.rock,cities:[],improvements:[],explored:false, map:"azenthyr_Level_One_West",coordinates:[1,5],special_Resource:{name:'none',economy:0,loyalty:0,stability:0,defense:0, consumption:0,BP_Per_Turn:0,}},
